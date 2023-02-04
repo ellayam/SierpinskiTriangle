@@ -10,13 +10,14 @@ public void draw() {
 }
 
 int base = 10;
-public void mousePressed() {
+public void keyPressed() {
   background(255);
   fill((int)(Math.random()*100)+100,(int)(Math.random()*100)+100,(int)(Math.random()*100)+100);
   if(base > 130) {
     base = 10;
-  } else {
-    base += 20;
+  }
+  if(key == ' ') {
+    base +=20;
   }
 }
 
